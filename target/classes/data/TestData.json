@@ -1,0 +1,13 @@
+{
+"registration":{
+		"fname":"sahil",
+		"lname":"test",
+		"email":""
+		
+	 },
+	 
+	 "filter" : {
+	 "name" : "mobile"
+	 }
+	 
+}
