@@ -14,13 +14,12 @@ public class NinjaStoreLoginTest extends NinjaStoreBaseClass  {
 	  NinjaStoreLoginAction obj1= new NinjaStoreLoginAction();
 	  obj1.amzonlogin();
   }
-  
-  @Test
-  public void loginWithInvalidCredentials() throws InterruptedException {
-	  test.log(LogStatus.INFO, "hiiii");
-	  
-	  test.log(LogStatus.INFO, "hello");
-  }
+	/*
+	 * @Test public void loginWithInvalidCredentials() throws InterruptedException {
+	 * test.log(LogStatus.INFO, "hiiii");
+	 * 
+	 * test.log(LogStatus.INFO, "hello"); }
+	 */
   
   
 }

@@ -1,46 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="70813" started-at="2020-01-04T06:41:47Z" finished-at="2020-01-04T06:42:58Z">
+  <suite name="Suite" duration-ms="43980" started-at="2020-01-05T05:57:08Z" finished-at="2020-01-05T05:57:52Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="70813" started-at="2020-01-04T06:41:47Z" finished-at="2020-01-04T06:42:58Z">
+    <test name="Test" duration-ms="43980" started-at="2020-01-05T05:57:08Z" finished-at="2020-01-05T05:57:52Z">
       <class name="com.demo.test.NinjaStoreLoginTest">
-        <test-method status="PASS" signature="initilizeReport()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="initilizeReport" is-config="true" duration-ms="191" started-at="2020-01-04T06:41:47Z" finished-at="2020-01-04T06:41:47Z">
+        <test-method status="PASS" signature="initilizeReport()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="initilizeReport" is-config="true" duration-ms="203" started-at="2020-01-05T05:57:08Z" finished-at="2020-01-05T05:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeReport -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="beforeMethod" is-config="true" duration-ms="23584" started-at="2020-01-04T06:41:47Z" finished-at="2020-01-04T06:42:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[qa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[public void com.demo.test.NinjaStoreLoginTest.loginWithInvalidCredentials() throws java.lang.InterruptedException]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginWithInvalidCredentials()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="loginWithInvalidCredentials" duration-ms="16" started-at="2020-01-04T06:42:10Z" finished-at="2020-01-04T06:42:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="afterMethod" is-config="true" duration-ms="549" started-at="2020-01-04T06:42:10Z" finished-at="2020-01-04T06:42:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="beforeMethod" is-config="true" duration-ms="22815" started-at="2020-01-04T06:42:11Z" finished-at="2020-01-04T06:42:34Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="beforeMethod" is-config="true" duration-ms="32782" started-at="2020-01-05T05:57:08Z" finished-at="2020-01-05T05:57:41Z">
           <params>
             <param index="0">
               <value>
@@ -61,18 +32,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginWithValidCredentials()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="loginWithValidCredentials" duration-ms="23207" started-at="2020-01-04T06:42:34Z" finished-at="2020-01-04T06:42:57Z">
+        <test-method status="FAIL" signature="loginWithValidCredentials()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="loginWithValidCredentials" duration-ms="10786" started-at="2020-01-05T05:57:41Z" finished-at="2020-01-05T05:57:52Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Validating edit accout text Expected is :Edit Account123, Actual Value : Edit Account expected [Edit Account123] but found [Edit Account]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Validating edit accout text Expected is :Edit Account123, Actual Value : Edit Account expected [Edit Account123] but found [Edit Account]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:50)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.demo.actions.SeleniumWrappers.verifyTest(SeleniumWrappers.java:58)
+at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:35)
 at com.demo.test.NinjaStoreLoginTest.loginWithValidCredentials(NinjaStoreLoginTest.java:15)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -105,11 +78,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentials -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="afterMethod" is-config="true" duration-ms="549" started-at="2020-01-04T06:42:57Z" finished-at="2020-01-04T06:42:58Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="afterMethod" is-config="true" duration-ms="302" started-at="2020-01-05T05:57:52Z" finished-at="2020-01-05T05:57:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="cleanUpReport()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="cleanUpReport" is-config="true" duration-ms="1060" started-at="2020-01-04T06:42:58Z" finished-at="2020-01-04T06:42:59Z">
+        <test-method status="PASS" signature="cleanUpReport()[pri:0, instance:com.demo.test.NinjaStoreLoginTest@12d3a4e9]" name="cleanUpReport" is-config="true" duration-ms="1391" started-at="2020-01-05T05:57:52Z" finished-at="2020-01-05T05:57:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUpReport -->

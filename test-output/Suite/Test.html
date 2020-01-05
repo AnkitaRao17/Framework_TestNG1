@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 04 12:11:47 IST 2020</td>
+<td>Started on:</td><td>Sun Jan 05 11:27:08 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>70 seconds (70813 ms)</td>
+<tr><td>Total time:</td><td>43 seconds (43980 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,19 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.demo.test.NinjaStoreLoginTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: com.demo.test.NinjaStoreLoginTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:50)
+<td><div><pre>java.lang.AssertionError: Validating edit accout text Expected is :Edit Account123, Actual Value : Edit Account expected [Edit Account123] but found [Edit Account]
+	at com.demo.actions.SeleniumWrappers.verifyTest(SeleniumWrappers.java:58)
+	at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:35)
 	at com.demo.test.NinjaStoreLoginTest.loginWithValidCredentials(NinjaStoreLoginTest.java:15)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1414013111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1414013111'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace267814113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace267814113'><pre>java.lang.AssertionError: Validating edit accout text Expected is :Edit Account123, Actual Value : Edit Account expected [Edit Account123] but found [Edit Account]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:50)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.demo.actions.SeleniumWrappers.verifyTest(SeleniumWrappers.java:58)
+	at com.demo.actions.NinjaStoreLoginAction.amzonlogin(NinjaStoreLoginAction.java:35)
 	at com.demo.test.NinjaStoreLoginTest.loginWithValidCredentials(NinjaStoreLoginTest.java:15)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -113,20 +116,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>23</td>
-<td>com.demo.test.NinjaStoreLoginTest@12d3a4e9</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.demo.test.NinjaStoreLoginTest.loginWithInvalidCredentials()'><b>loginWithInvalidCredentials</b><br>Test class: com.demo.test.NinjaStoreLoginTest</td>
-<td></td>
-<td>0</td>
+<td>10</td>
 <td>com.demo.test.NinjaStoreLoginTest@12d3a4e9</td></tr>
 </table><p>
 </body>

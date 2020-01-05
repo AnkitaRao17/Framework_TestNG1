@@ -28,16 +28,19 @@ public class NinjaStoreBaseClass {
 	PropertyFileReader propertyReader = new PropertyFileReader();
 	InitilizeVariable initilizeEnv = new InitilizeVariable();
 	
+	//Extend report variable creations
 	 public static ExtentReports reports;
 	 public static ExtentTest test;
 	
 		@BeforeSuite
 		public void initilizeReport() {
+			// extend reports have two type of jars 1.relevantcodes 2.ovanstack 
 			reports = new ExtentReports(System.getProperty("user.dir")+"/reports/"+new SimpleDateFormat("yyyy-MM-dd hh-mm-ss-ms").format(new Date()) + "reports.html");
 		}
 		
 		@AfterSuite
 		public void cleanUpReport() {
+			//close the report
 			reports.flush();
 		}
 	
@@ -48,7 +51,7 @@ public class NinjaStoreBaseClass {
 			invokeBrowser(browserName);
 			initilizeEnv.setEnvName(envName);
 			driver.manage().window().maximize();
-			driver.get(propertyReader.getProperties("url"));
+			driver.get(propertyReader.getProperties("registartionurl"));
 			Thread.sleep(8000);
 		  }		
 
@@ -59,10 +62,9 @@ public class NinjaStoreBaseClass {
 		 }
 		
 		public void invokeBrowser(String browserName) {
-			
 			switch(browserName) {
-			
 			case "chrome" :
+				//user.dir is used to call driver which is copied in driver folder
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver.exe");
 				driver = new ChromeDriver();
 				break;

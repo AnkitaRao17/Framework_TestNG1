@@ -3,7 +3,12 @@
 		"fname":"sahil",
 		"lname":"test",
 		"email":""
-		
+		"firstnamer":"sunita",
+        "lastname":"paul",
+       "email":"sdfgh@gmail.com",
+       "telephone":"1234567890",
+       "password":"1234567",
+       "confirmpassword":"1234567"
 	 },
 	 
 	 "filter" : {
